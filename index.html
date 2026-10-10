@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#09090b">
+<title>Portal Technical Team · Cinema XXI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="gg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f9e59a"/><stop offset=".5" stop-color="#d9ac45"/><stop offset="1" stop-color="#9a6f1c"/>
+    </linearGradient>
+    <linearGradient id="beamg" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#fff3cf" stop-opacity=".55"/><stop offset=".6" stop-color="#ffe8a8" stop-opacity=".12"/><stop offset="1" stop-color="#ffe8a8" stop-opacity="0"/>
+    </linearGradient>
+    <symbol id="logo" viewBox="0 0 120 56">
+      <rect x="1.5" y="1.5" width="117" height="53" rx="11" fill="#0b0b0d" stroke="url(#gg)" stroke-width="2.4"/>
+      <text x="60" y="41" text-anchor="middle" font-family="Montserrat,'Arial Black',Arial,sans-serif" font-weight="800" font-size="35" letter-spacing="1" fill="url(#gg)">XXI</text>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="hdr"><div class="wrap hdr-in">
+  <button class="brand" data-nav="beranda" aria-label="Beranda">
+    <svg class="xxi" viewBox="0 0 120 56" role="img" aria-label="XXI"><use href="#logo"/></svg>
+    <span class="brand-t"><b>TECHNICAL TEAM</b><span>Laporan &amp; Monitoring</span></span>
+  </button>
+  <nav class="dnav" id="dnav"></nav>
+  <div class="hdr-r">
+    <span class="chip" id="sync">Memuat…</span>
+    <button class="icon-btn" data-act="theme" aria-label="Ganti tema"><svg class="ic" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+  </div>
+</div></header>
+
+<main class="wrap view" id="view"></main>
+<nav class="bnav" id="bnav"></nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="config.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
